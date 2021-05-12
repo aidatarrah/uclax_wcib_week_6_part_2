@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Week 6, Part 2</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" id="view" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+  </head>
+
+  <body>
+
+   <nav class="site-header sticky-top py-1">
+     <div class="container d-flex flex-column flex-md-row justify-content-between">
+       <a class="py-1 px-1" href="https://www.nuttylife.org/">
+         <img src="img/Nutty+life+logo+white.png" width="48" height="auto" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="d-block mx-auto ">
+       </a>
+       <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
+       <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+       <a class="py-2 d-none d-md-inline-block" href="#">Products</a>
+       <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+       <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+     </div>
+   </nav>
+
+   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+     <div class="col-md-5 p-lg-5 mx-auto my-5">
+       <h1 class="display-4 font-weight-normal">Vegan Milks</h1>
+       <p class="lead font-weight-normal">Are you looking to become healthier by substituting food instead of medicine? You’ve come to the right place!</p>
+       <button id="btnShadow" class="btn btn-outline-danger" onclick="on()" href="#">SHOP</button>
+
+    <div id="overlay" onclick="off()">
+
+           <img src="/img/overlay.jpg" id="img">
+
+           <h4 id="text">Coming Soon!</h4>
+             <p class="email">Enter your email address to <br>
+               join our Pop-Up Shop</p>
+
+           <form id="formEmail">
+            <div class="emailInput">
+              <label for="email-input">Email Address</label>
+            <section class="inputLine">
+               <input id="email-input" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
+             </section>
+             <button id="continue" class="continue" type="submit" onclick="on()">Continue</button>
+           </div>
+         </form>
+
+     </div>
+
+
+
+     <!-- <div class="product-device d-none d-md-block"></div> -->
+     <!-- <div class="product-device product-device-2 d-none d-md-block"></div> -->
+
+   </div>
+
+   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden">
+       <div class="my-3 py-3">
+         <h2 class="display-5" style="color: gray;">Almond Milk</h2>
+         <p class="lead">100% Almonds</p>
+       </div>
+       <div class="bg-light box-shadow mx-auto"> </div>
+          <img src="/img/almond-milk.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+     </div>
+     <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden py-5">
+
+       <div class="my-3 p-3">
+         <h2 class="display-5" style="color: gray;">Hazelnut Milk</h2>
+         <p class="lead">100% Hazelnuts</p>
+       </div>
+       <div class="bg-dark text-dark box-shadow mx-auto"></div>
+       <img src="/img/hazelnut-milk.jpg" style="width: 50%; height: auto; border-radius: 21px;"></div>
+
+   </div>
+
+   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+     <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  py-5">
+       <div class="my-3 p-3">
+         <h2 class="display-5" style="color: gray;">Oat Milk</h2>
+         <p class="lead">100% Oats</p>
+       </div>
+       <div class="bg-light text-dark box-shadow mx-auto"></div>
+          <img src="img/oatmilk.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+       </div>
+     <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  py-5">
+       <div class="my-3 py-3">
+         <h2 class="display-5" style="color: gray;">Chocolate Mint Almond Milk</h2>
+         <p class="lead">Almonds, Cocoa Powder, Fresh Mint</p>
+       </div>
+       <div class="bg-light text-dark box-shadow mx-auto"></div>
+       <img src="img/chocolate-mint.jpg" style="width: 383px; height: 291px; border-radius: 21px;">
+     </div>
+   </div>
+
+   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+     <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+       <div class="my-3 p-3">
+         <h2 class="display-5" style="color: gray;">Tumeric Almond Milk</h2>
+         <p class="lead">Almonds, Turmeric</p>
+       </div>
+       <div class="bg-white text-dark box-shadow mx-auto"></div>
+         <img src="img/tumeric.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+     </div>
+     <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden py-5">
+       <div class="my-3 py-3">
+         <h2 class="milk display-5" style="color: gray;">Pumpkin Seed Milk</h2>
+         <p class="lead">100% Pumpkin seeds</p>
+       </div>
+       <div class="bg-white box-shadow mx-auto"></div>
+          <img src="/img/pumpkin.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+     </div>
+   </div>
+
+   <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+       <div class="my-3 p-3">
+         <h2 class="display-5">Another headline</h2>
+         <p class="lead">And an even wittier subheading.</p>
+       </div>
+       <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+     </div>
+     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+       <div class="my-3 py-3">
+         <h2 class="display-5">Another headline</h2>
+         <p class="lead">And an even wittier subheading.</p>
+       </div>
+       <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+     </div>
+   </div> -->
+
+   <footer class="container py-4" id="footer" >
+     <div class="row">
+       <div class="col-12 col-md">
+         <img src="img/Nutty+life+logo+white.png" width="48" height="auto" viewBox="0 0 48 48" class="center center">
+       </div>
+       <div class="col-6 col-md" id="firstCl">
+         <h5>Features</h5>
+         <ul class="list-unstyled text-small">
+           <li><a class="text-muted" href="#">Cool stuff</a></li>
+           <li><a class="text-muted" href="#">Random feature</a></li>
+           <li><a class="text-muted" href="#">Team feature</a></li>
+           <li><a class="text-muted" href="#">Stuff for developers</a></li>
+           <li><a class="text-muted" href="#">Another one</a></li>
+           <li><a class="text-muted" href="#">Last time</a></li>
+         </ul>
+       </div>
+       <div class="col-6 col-md" id="secondCl">
+         <h5>Resources</h5>
+         <ul class="list-unstyled text-small">
+           <li><a class="text-muted" href="#">Resource</a></li>
+           <li><a class="text-muted" href="#">Resource name</a></li>
+           <li><a class="text-muted" href="#">Another resource</a></li>
+           <li><a class="text-muted" href="#">Final resource</a></li>
+         </ul>
+       </div>
+       <div class="col-6 col-md" id="thirdCl">
+         <h5>About</h5>
+         <ul class="list-unstyled text-small">
+           <li><a class="text-muted" href="#">Team</a></li>
+           <li><a class="text-muted" href="#">Locations</a></li>
+           <li><a class="text-muted" href="#">Privacy</a></li>
+           <li><a class="text-muted" href="#">Terms</a></li>
+         </ul>
+       </div>
+     </div>
+      <small class="px-0 left text-muted ">&copy; 2021</small>
+   </footer>
+
+
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+   <script src="../../assets/js/vendor/popper.min.js"></script>
+   <script src="../../dist/js/bootstrap.min.js"></script>
+   <script src="../../assets/js/vendor/holder.min.js"></script>
+   <script>
+     Holder.addTheme('thumb', {
+       bg: '#55595c',
+       fg: '#eceeef',
+       text: 'Thumbnail'
+     });
+   </script>
+ </body>
+
+</html>
