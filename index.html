@@ -37,27 +37,33 @@
      <div class="col-md-5 p-lg-5 mx-auto my-5">
        <h1 class="display-4 font-weight-normal">Vegan Milks</h1>
        <p class="lead font-weight-normal">Are you looking to become healthier by substituting food instead of medicine? You’ve come to the right place!</p>
-       <button id="btnShadow" class="btn btn-outline-danger" onclick="on()" href="#">SHOP</button>
+       <button id="myBtn" class="btn btn-outline-danger" onclick="on()" href="#">SHOP</button>
 
-    <div id="overlay" onclick="off()">
+    <div id="myModal" class="modal" onclick="off()">
+           <div class="modal-content">
+             <span class="close">&times;</span>
 
-           <img src="img/overlay.jpg" id="img">
 
-           <h4 id="text">Coming Soon!</h4>
-             <p class="email">Enter your email address to <br>
+       <div class="row" id="popUpText">
+
+           <h4 class="text-center" id="comingSoon">Coming Soon!</h4>
+
+             <p class="email text-sm-left">Enter your email address to <br>
                join our Pop-Up Shop</p>
 
            <form id="formEmail">
-            <div class="emailInput">
-              <label for="email-input">Email Address</label>
-            <section class="inputLine">
-               <input id="email-input" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
+            <div class="text-sm-left">
+              <label  class="text-sm-left" for="email-input">Email Address</label>
+            <section class="text-sm-left" class="inputLine">
+               <input class="text-sm-left" id="email-input" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
              </section>
-             <button id="continue" class="continue" type="submit" onclick="on()">Continue</button>
+             <button  id="continue" class="continue" type="submit" onclick="on()">Continue</button>
            </div>
          </form>
-
+       </div>
+        <img class="text-xs-right" src="img/overlay.jpg" id="img">
      </div>
+  </div>
 
 
 
@@ -97,18 +103,18 @@
        </div>
      <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  py-5">
        <div class="my-3 py-3">
-         <h2 class="display-5" style="color: gray;">Chocolate Mint Almond Milk</h2>
+         <h2 class="display-5" style="color: gray;">Chocolate Mint</h2>
          <p class="lead">Almonds, Cocoa Powder, Fresh Mint</p>
        </div>
        <div class="bg-light text-dark box-shadow mx-auto"></div>
-       <img src="img/chocolate-mint.jpg" style="width: 383px; height: 291px; border-radius: 21px;">
+       <img src="img/chocolate-mint.jpg" style="width: 50%; height: auto; border-radius: 21px;">
      </div>
    </div>
 
    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
      <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
        <div class="my-3 p-3">
-         <h2 class="display-5" style="color: gray;">Tumeric Almond Milk</h2>
+         <h2 class="display-5" style="color: gray;">Tumeric Almond</h2>
          <p class="lead">Almonds, Turmeric</p>
        </div>
        <div class="bg-white text-dark box-shadow mx-auto"></div>

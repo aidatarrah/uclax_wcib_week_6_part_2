@@ -14,72 +14,87 @@ body {
   text-align: center; }
 
 /* overlay */
-#overlay {
-  position: fixed;
-  /* Sit on top of the page content */
+.modal {
   display: none;
   /* Hidden by default */
-  width: 641px;
-  height: 492px;
-  justify-content: center;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+.modal-content {
   background-color: #fff;
   border-radius: 20px;
   border: 1px solid gray;
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
+  position: absolute;
   top: 15%;
   left: 33%;
   right: 55%;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+  margin: auto;
+  padding: 20px;
+  width: 641px;
+  height: 492px; }
 
 #img {
   position: absolute;
   width: 427px;
   height: auto;
-  right: 0%;
+  right: 0;
+  top: 0;
   border-radius: 0px 20px 20px 0px; }
 
-#text {
+#comingSoon {
   position: absolute;
   color: gray;
-  left: 16.5%;
   top: 20%;
+  left: 16.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
 .email {
+  position: absolute;
   display: flex;
   font-size: 16px;
   padding-top: 100px;
-  padding-left: 10px; }
+  padding-left: 5px;
+  text-align: center; }
 
 .emailInput {
   display: flex;
-  position: relative;
-  margin-left: 10px;
-  margin-top: 60px;
+  position: absolute;
+  margin-bottom: 10px;
   color: gray; }
 
 .inputLine {
-  display: flex;
   position: absolute;
-  display: block;
-  margin-top: 40px;
-  padding-left: 1px; }
+  display: block; }
 
 .continue {
   background-color: #e3cdbf;
   display: flex;
   position: absolute;
-  padding-left: 10px;
-  margin-top: 80px;
+  margin-top: 10px;
   width: 185px;
   color: gray;
   justify-content: center;
   border: none;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
+#formEmail {
+  margin-top: 165px;
+  padding-left: 10px; }
 
 .continue:hover {
   color: black; }
@@ -130,7 +145,20 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: none !important; } }
+    background-image: none !important; }
+  .modal-content {
+    width: 50%;
+    height: auto;
+    border: none; }
+  #img {
+    display: none; }
+  .modal {
+    background: #fff; }
+  #comingSoon {
+    top: 40%;
+    left: 35%; }
+  .email {
+    text-align: left; } }
 
 .overflow-hidden {
   overflow: hidden; }
@@ -158,3 +186,13 @@ footer {
 
 .bg-dark {
   background-color: #fff !important; }
+
+.close {
+  display: none;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5; }
