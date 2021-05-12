@@ -92,8 +92,7 @@ body {
  */
 .site-header {
   background-color: #c9a7a6;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px); }
+  -webkit-backdrop-filter: saturate(180%) blur(20px); }
 
 .site-header a {
   color: #fff;
