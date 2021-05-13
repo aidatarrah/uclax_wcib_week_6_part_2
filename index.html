@@ -19,11 +19,10 @@
   </head>
 
   <body>
-
-   <nav class="site-header sticky-top py-1">
-     <div class="container d-flex flex-column flex-md-row justify-content-between">
-       <a class="py-1 px-1" href="https://www.nuttylife.org/">
-         <img src="img/Nutty+life+logo+white.png" width="48">
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-1 px-1" href="https://www.nuttylife.org/">
+         <img src="img/Nutty+life+logo+white.png" alt="logo" width="48">
        </a>
        <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
        <a class="py-2 d-none d-md-inline-block" href="#">About</a>
@@ -38,7 +37,8 @@
        <h1 class="display-4 font-weight-normal">Vegan Milks</h1>
        <p class="lead font-weight-normal">Are you looking to become healthier by substituting food instead of medicine? You’ve come to the right place!</p>
        <button id="myBtn" class="btn btn-outline-danger" onclick="on()">SHOP</button>
-
+     </div>
+   </div>
     <div id="myModal" class="modal" onclick="off()">
            <div class="modal-content">
              <span class="close">&times;</span>
@@ -53,15 +53,15 @@
 
            <form id="formEmail">
             <div class="text-sm-left">
-              <label  class="text-sm-left" for="email-input">Email Address</label>
+              <label  class="text-sm-left" id="email-input" for="email-input">Email Address</label>
           <section>
-               <input class="text-sm-left"id="inputLine email-input" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
+               <input class="text-sm-left" id="inputLine email-input" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
           </section>
              <button  id="continue" class="continue" type="submit" onclick="on()">Continue</button>
            </div>
          </form>
        </div>
-        <img class="right" src="img/overlay.jpg" id="img">
+        <img class="right" src="img/overlay.jpg" id="img" alt="modalpic">
      </div>
   </div>
 
@@ -79,7 +79,7 @@
          <p class="lead">100% Almonds</p>
        </div>
        <div class="bg-light box-shadow mx-auto"> </div>
-          <img src="img/almond-milk.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+          <img src="img/almond-milk.jpg" alt="Almond Milk"style="width: 50%; height: auto; border-radius: 21px;">
      </div>
      <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden py-5">
 
@@ -88,7 +88,7 @@
          <p class="lead">100% Hazelnuts</p>
        </div>
        <div class="bg-dark text-dark box-shadow mx-auto"></div>
-       <img src="img/hazelnut-milk.jpg" style="width: 50%; height: auto; border-radius: 21px;"></div>
+       <img src="img/hazelnut-milk.jpg" alt="Hazelnut Milk"style="width: 50%; height: auto; border-radius: 21px;"></div>
 
    </div>
 
@@ -99,7 +99,7 @@
          <p class="lead">100% Oats</p>
        </div>
        <div class="bg-light text-dark box-shadow mx-auto"></div>
-          <img src="img/oatmilk.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+          <img src="img/oatmilk.jpg" alt="Oatmilk" style="width: 50%; height: auto; border-radius: 21px;">
        </div>
      <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden  py-5">
        <div class="my-3 py-3">
@@ -107,7 +107,7 @@
          <p class="lead">Almonds, Cocoa Powder, Fresh Mint</p>
        </div>
        <div class="bg-light text-dark box-shadow mx-auto"></div>
-       <img src="img/chocolate-mint.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+       <img src="img/chocolate-mint.jpg" id="Chocolate Mint" style="width: 50%; height: auto; border-radius: 21px;">
      </div>
    </div>
 
@@ -118,7 +118,7 @@
          <p class="lead">Almonds, Turmeric</p>
        </div>
        <div class="bg-white text-dark box-shadow mx-auto"></div>
-         <img src="img/tumeric.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+         <img src="img/tumeric.jpg" alt="Tumeric Milk" style="width: 50%; height: auto; border-radius: 21px;">
      </div>
      <div class="bg-light text-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden py-5">
        <div class="my-3 py-3">
@@ -126,7 +126,7 @@
          <p class="lead">100% Pumpkin seeds</p>
        </div>
        <div class="bg-white box-shadow mx-auto"></div>
-          <img src="img/pumpkin.jpg" style="width: 50%; height: auto; border-radius: 21px;">
+          <img src="img/pumpkin.jpg" alt="Pumpkin Milk" style="width: 50%; height: auto; border-radius: 21px;">
      </div>
    </div>
 
@@ -150,7 +150,7 @@
    <footer class="container py-4" id="footer" >
      <div class="row">
        <div class="col-12 col-md">
-         <img src="img/Nutty+life+logo+white.png" width="48" height="auto" viewBox="0 0 48 48" class="center center">
+         <img src="img/Nutty+life+logo+white.png" alt="logo" width="48" class="center center">
        </div>
        <div class="col-6 col-md" id="firstCl">
          <h5>Features</h5>
@@ -202,5 +202,4 @@
      });
    </script>
  </body>
-
 </html>
