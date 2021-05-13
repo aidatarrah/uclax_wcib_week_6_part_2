@@ -153,6 +153,7 @@ body {
   #img {
     display: none; }
   .modal {
+    width: 400px;
     background: #fff; }
   #comingSoon {
     top: 20%;
