@@ -6,33 +6,21 @@ html {
 }
 
 body {
-    background: url('../img/new_bg_hazel.png') no-repeat left top fixed;
+    /*background: url('../img/new_bg_hazel.png') no-repeat left top fixed;*/
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
     text-align: center;
+    nav {
+        font-weight: 500;
+    }
 }
-
-/* overlay */
-// #overlay {
-//   position: fixed; /* Sit on top of the page content */
-//   display: none; /* Hidden by default */
-//   width: 641px;
-//   height: 492px;
-//   justify-content: center;
-//   background-color: #fff;
-//   border-radius: 20px;
-//   border: 1px solid gray;
-//   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-//   cursor: pointer; /* Add a pointer on hover */
-//   top: 15%;
-//   left: 33%;
-//   right: 55%;
-//   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-// }
-
+#myBtn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -47,54 +35,31 @@ body {
 }
 
 .modal-content {
-  background-color: #fff;
   border-radius: 20px;
   border: 1px solid gray;
-  position: absolute;
-  top: 15%;
-  left: 33%;
-  right: 55%;
   margin: auto;
-  padding: 20px;
-  width: 641px;
-  height: 492px;
+  color: gray;
 }
 
 #img {
-  position: absolute;
-  width: 427px;
+  width: 320px;
   height: auto;
   right: 0;
-  top: 0;
-  border-radius: 0px 20px 20px 0px;
+  padding-bottom: 50px;
 }
 
 #comingSoon {
-  position: absolute;
   color: gray;
-  top: 20%;
-  left: 16.5%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
 
-.email {
-  position: absolute;
+.emailA {
   display: flex;
   font-size: 16px;
-  padding-top: 100px;
+  font-weight: 200;
   padding-left: 5px;
-  text-align: center;
-}
-
-#emailInput {
-  display: block;
-  position: absolute;
-  width: 185px;
-  margin-bottom: 10px;
-  // margin-left: 10px;
-  // margin-top: 60px;
-  color: gray;
+  text-align: start;
 }
 
 .inputLine {
@@ -103,25 +68,26 @@ body {
   // margin-top: 40px;
  // padding-left: 1px;
 }
-.continue {
-  background-color: #e3cdbf;
-  display: flex;
-  position: absolute;
-  margin-top: 10px;
+.continue, .cancel {
+  background-color: #c9a7a6;
   width: 185px;
-  color: gray;
+  color:white;
+  font-weight: 500;
   justify-content: center;
   border: none;
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
   }
 
-  #formEmail {
-  margin-top: 165px;
-  padding-left: 10px;
+
+  .continue:hover, 
+  .cancel:hover {
+    color: gray;
   }
-  .continue:hover {
-    color: black;
+
+  #myForm {
+    display: none;
   }
+
 .container {
   max-width: 960px;
 }
@@ -206,7 +172,7 @@ body {
   body {
     background-image: none!important;
   }
-   .modal-content {
+  /* .modal-content {
      width: 50%;
      height: auto;
      border: none;
@@ -227,7 +193,7 @@ body {
   }
   .inputLine {
     align-items: center;
-  }
+  }*/
 }
 
 .overflow-hidden { overflow: hidden; }

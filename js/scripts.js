@@ -27,6 +27,8 @@
 // }
 // }
 
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -51,4 +53,19 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+// closes the window
+ /*
+function closeForm() {
+  document.getElementById("myModal").style.display = "none";
+}  */
+
+// thank you
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myModal").style.display = "none";
 }

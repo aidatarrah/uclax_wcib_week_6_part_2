@@ -6,8 +6,8 @@
 
     <title>Week 6, Part 2</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" src="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" src="/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 
     <meta name="description" content="">
     <meta name="viewport" id="view" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js" defer></script>
 
@@ -36,40 +36,116 @@
      </div>
    </nav>
 
-   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-     <div class="col-md-5 p-lg-5 mx-auto my-5">
+
+   <div class="container-fluid">
+
+      <div class="row align-items-center">
+
+        <div class="col-md-4 justify-content-start">
+          <img src="/img/new_bg_hazel.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="col-md-8 justify-content-center">
+          <h1 class="display-4 font-weight-normal">Vegan Milks</h1>
+          <p class="lead font-weight-normal">Are you looking to become healthier by substituting <br>food instead of medicine? You’ve come to the right place!</p>
+          <button id="myBtn" type="button" class="btn btn-outline-danger" type="button" data-target="#exampleModalCenter" onclick="on()">SHOP</button>
+        </div>
+      </div>
+   </div>
+<!--
+   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 justify-content-start">
+      <img src="/img/new_bg_hazel.png" alt="hezel">
+    </div>
+  </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+     <div class="col-md-5 p-lg-5 mx-auto my-5 justify-content-center ">
        <h1 class="display-4 font-weight-normal">Vegan Milks</h1>
        <p class="lead font-weight-normal">Are you looking to become healthier by substituting food instead of medicine? You’ve come to the right place!</p>
        <button id="myBtn" class="btn btn-outline-danger" onclick="on()">SHOP</button>
      </div>
    </div>
-    <div id="myModal" class="modal" onclick="off()">
-           <div class="modal-content">
+--> <!--
+    <div id="myModal" class="modal center" onclick="off()">
+           <div class="modal-content container-fluid">
              <span class="close">&times;</span>
 
-
-       <div class="row" id="popUpText">
-
+       <div class="row flex-column" id="popUpText">
+         <div class="col-sm-5">
            <h4 class="text-center" id="comingSoon">Coming Soon!</h4>
-
-             <p class="email text-sm-left">Enter your email address to <br>
+           <p class="email text-sm-left">Enter your email address to <br>
                join our Pop-Up Shop</p>
 
            <form id="formEmail">
             <div class="text-sm-left">
               <label  class="text-sm-left" id="input" for="inputLine">Email Address</label>
-          <section>
+          <div>
                <input class="text-sm-left" id="inputLine" type="email" name="email-inputted" placeholder="Email Address" style="opacity: 0.5;">
-          </section>
+          </div>
              <button  id="continue" class="continue" type="submit" onclick="on()">Continue</button>
            </div>
          </form>
        </div>
+     </div>
+        <div class="col-sm-8">
         <img class="right" src="img/overlay.jpg" id="img" alt="modalpic">
      </div>
+   </div>
   </div>
+-->
+
+<!-- new modal -->
 
 
+    <!-- Pop Up Window -->
+    <div>
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title dark-text">Coming soon!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- Modal Content -->
+          <div class="modal-body">
+               <p class="lead text-sm-center">Enter your email address to join our Pop-Up Shop</p>
+
+            <div class="form-group">
+              <label for="emailAddress" class="emailA">Your Email</label>
+              <input name="email"  id="emailAddress" type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+<div>
+<img class="" src="img/overlay.jpg" id="img" alt="modalpic">
+</div>
+
+          <!-- Footer Buttons -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn continue" data-dismiss="modal" onclick="openForm()">Continue</button>
+          </div>
+
+          <!-- thank you -->
+
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h4>"Thanks for joining us!"</h4>
+              <button type="button" class="btn cancel" style="margin-bottom:20px; margin-top:20px;" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+
+          <!-- end thank you-->
+
+
+        </div>
+      </div>
+    </div>
+
+          <!-- End of Modal -->
 
      <!-- <div class="product-device d-none d-md-block"></div> -->
      <!-- <div class="product-device product-device-2 d-none d-md-block"></div> -->
@@ -191,7 +267,7 @@
    <!-- Bootstrap core JavaScript
    ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
    <script src="../../assets/js/vendor/popper.min.js"></script>
    <script src="../../dist/js/bootstrap.min.js"></script>
@@ -202,6 +278,6 @@
        fg: '#eceeef',
        text: 'Thumbnail'
      });
-   </script>
+   </script>-->
  </body>
 </html>
