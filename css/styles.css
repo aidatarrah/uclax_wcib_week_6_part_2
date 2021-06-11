@@ -127,32 +127,6 @@ body {
     -webkit-box-flex: 1;
     flex: 1; } }
 
-@media (max-width: 768px) {
-  body {
-    background-image: none !important; }
-  /* .modal-content {
-     width: 50%;
-     height: auto;
-     border: none;
-  }
-#img {
-  display: none;
-}
-  .modal {
-  align-items: center;
-  background: #fff;
-  }
-  #comingSoon {
-    top: 20%;
-    left: 35%;
-  }
-  .email {
-    text-align: center;
-  }
-  .inputLine {
-    align-items: center;
-  }*/ }
-
 .overflow-hidden {
   overflow: hidden; }
 
